@@ -1,0 +1,180 @@
+<h3>Novo Membro</h3>
+<div class="col-sm-12">
+      <div class="col-sm-12">
+<form class="form-horizontal"[formGroup]="formulario" (ngSubmit)="onSubmit()" >
+<div class="form-control mb-12 mr-sm-4 mb-sm-0">
+  <!-- Nome -->
+  <div class="col-sm-12">
+    <label for="nome" class="control-label">Nome</label>
+  </div>
+  <div class="col-sm-12">
+    <input type="text" class="form-control" formControlName="Nome" id="nome" placeholder="Nome Completo">
+  </div>
+  <!-- Fim do Nome -->
+  <br>
+  <!-- Dados do Endereço-->
+
+    <h5>Endereço</h5>
+    <div class="form-control mb-10 mr-sm-4 mb-sm-0">
+      <div class="form-group row">
+        <div class="col-sm-10">
+      <label  class="col-sm-10 form-control-label">Tipo de Logadouro</label>
+      </div>
+      <div class="col-sm-10">
+        <select class="custom-select" formControlName="TipoLogadouro">
+          <option value="Selecione" selected>Selecione</option>
+          <option value="Rua">Rua</option>
+          <option value="Avenida">Avenida</option>
+          <option value="Travessa">Travessa</option>
+          <option value="Acesso">Acesso</option>
+          <option value="Praça">Praça</option>
+          <option value="Rodovia">Rodovia</option>
+        </select>
+      </div>
+    </div>
+   <div class="form-group row">
+      <label  class="col-sm-10 form-control-label">Nome do Logadouro</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control"  placeholder="Nome do Logadouro" formControlName="Logadouro">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label  class="col-sm-10 form-control-label">Numero</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control"  placeholder="Numero" formControlName="Numero">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label  class="col-sm-10 form-control-label">Complemento</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control"  placeholder="Complemento" formControlName="Complemento">
+      </div>
+    </div>
+     <div class="form-group row">
+      <label  class="col-sm-10 form-control-label">Bairro</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control"  placeholder="Bairro" formControlName="Bairro">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label  class="col-sm-10 form-control-label">Cidade</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control"  placeholder="Cidade" formControlName="Cidade">
+      </div>
+    </div>
+
+     <div class="form-group row">
+      <label  class="col-sm-10 form-control-label">DDD</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control"  placeholder="DDD" formControlName="DDD">
+      </div>
+      <label  class="col-sm-10 form-control-label">Telefone</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control"  placeholder="Telefone" formControlName="Telefone">
+      </div>
+    </div>
+    </div>
+
+
+  <!-- Fim Endereço Membro -->
+
+  <!-- Dados do Membro -->
+
+    <h5>Dados</h5>
+    <div class="form-inline">
+      <div  class="form-control mb-10 mr-sm-4 mb-sm-0">
+    <div class="form-control mb-10 mr-sm-4 mb-sm-0">
+      <label  class="mr-sm-2">Estado Civil</label>
+      <div class="">
+        <select class="custom-select" formControlName="EstadoCivil">
+          <option selected>-</option>
+          <option value="Solteiro(a)">Solteiro(a)</option>
+          <option value="Casado(a)">Casado(a)</option>
+          <option value="Viuvo(a)">Viuvo(a)</option>
+          <option value="Divorciado(a)">Divorciado(a)</option>
+        </select>
+      </div>
+    </div>
+    <div class="form-control mb-2 mr-sm-2 mb-sm-0">
+      <label  class="mr-sm-2">Sexo</label>
+      <div class="">
+        <select class="custom-select" formControlName="Sexo">
+          <option selected>-</option>
+          <option value="Masculino">Masculino</option>
+          <option value="Feminino">Feminino</option>
+        </select>
+      </div>
+    </div>
+     <div class="form-control mb-2 mr-sm-2 mb-sm-0">
+      <label  class="mr-sm-2">Data de nascimento</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control"  placeholder="DD/MM/AAAA" formControlName="DataNascimento">
+      </div>
+    </div>
+    <div class="form-control mb-2 mr-sm-2 mb-sm-0">
+      <label  class="mr-sm-2">É batizado?</label>
+      <div class="">
+        <select class="custom-select" formControlName="Batizado">
+          <option selected>-</option>
+          <option value="Sim">Sim</option>
+          <option value="Não">Não</option>
+        </select>
+      </div>
+    </div>
+    <br>
+    <br>
+    <div class="form-control mb-2 mr-sm-2 mb-sm-0">
+      <label  class="mr-sm-2">Ano do batismo</label>
+      <div class="col-sm-3">
+        <input type="text" class="form-control"  placeholder="Ano que batizou" formControlName="AnoBatismo">
+      </div>
+    </div>
+    <div class="form-control mb-10 mr-sm-4 mb-sm-0">
+      <label  class="mr-sm-2">Discipulador</label>
+      <div class="">
+        <select class="custom-select" formControlName="Discipulador">
+          <option selected>-</option>
+          <option value="Jose Guilherme">Jose Guilherme Santos Campos</option>
+
+        </select>
+      </div>
+    </div>
+       <div class="form-control mb-2 mr-sm-2 mb-sm-0">
+      <label  class="mr-sm-2">Ja fez Encontro?</label>
+      <div class="">
+        <select class="custom-select" formControlName="Encontro">
+          <option selected>-</option>
+          <option value="Sim">Sim</option>
+          <option value="Não">Não</option>
+        </select>
+      </div>
+    </div>
+    <br>
+    <br>
+     <div class="form-control mb-2 mr-sm-2 mb-sm-0">
+      <label  class="mr-sm-2">Escola de Líderes?</label>
+      <div class="">
+        <select class="custom-select" formControlName="EscolaLideres">
+          <option selected>-</option>
+          <option value="Sim">Sim</option>
+          <option value="Não">Não</option>
+        </select>
+      </div>
+    </div>
+
+
+
+
+
+
+
+    </div>
+</div>
+
+<!-- Fim dos Dados Membro -->
+</div>
+<button type="submit" class="btn btn-primary">Enviar</button>
+</form>
+      </div>
+</div>
+<div class="container"><p>Valor:{{formulario.value | json}}</p></div>
